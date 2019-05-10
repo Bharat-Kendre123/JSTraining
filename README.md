@@ -2,6 +2,6 @@
 
 1. DataTypes
 
-2. Primitive Data TypeConversion
+2. Primitive Data Type Conversion
 
-3. OPerators
+3. Operators
