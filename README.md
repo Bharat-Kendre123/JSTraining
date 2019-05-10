@@ -1,5 +1,7 @@
-# JSTraining
-Need to learns JS basics
+# Topics
 
+1. DataTypes
 
-1. What is JS Engine ?
+2. Primitive Data TypeConversion
+
+3. OPerators
