@@ -10,4 +10,6 @@
 
 5. Logical Operators
 
-6. 
+6. Loops And Switch statement
+
+7. Functions
