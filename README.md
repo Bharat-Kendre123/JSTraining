@@ -7,3 +7,9 @@
 3. Operators
 
 4. Comparisons
+
+5. Logical Operators
+
+6. Loops And Switch statement
+
+7. Functions
