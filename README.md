@@ -13,3 +13,7 @@
 6. Loops And Switch statement
 
 7. Functions
+
+8. Objects
+
+9. Symbol Type
