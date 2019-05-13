@@ -7,3 +7,7 @@
 3. Operators
 
 4. Comparisons
+
+5. Logical Operators
+
+6. 
