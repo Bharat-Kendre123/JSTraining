@@ -4,7 +4,7 @@
 
 2.  call the **String(value)** function to convert a value to a string:
 
-3. Numeric conversion rules: **NUmber(value)**
+3. Numeric conversion rules: **Number(value)**
 
 	Value	->		Becomes…
 	* undefined	->	NaN

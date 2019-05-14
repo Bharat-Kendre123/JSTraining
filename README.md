@@ -17,3 +17,5 @@
 8. Objects
 
 9. Symbol Type
+
+10. Object methods, this

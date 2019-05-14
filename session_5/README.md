@@ -1,7 +1,7 @@
 ### Logical Operators
 
-#### Logical AND operator
-1. forget the origan use of OR operator. That we used till now.
+#### Logical OR operator
+1. forget the original use of OR operator. That we used till now.
 2. The extended algorithm works as follows.Given multiple OR’ed values:
 
 * result = value1 || value2 || value3;
