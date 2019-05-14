@@ -100,3 +100,11 @@ let user8 = {
 user8.sayHi(); // Ilya
 
 
+// task 1
+
+let user9 = {
+  name: "John",
+  go: function() { alert(this.name) }
+}
+
+(user.go)()
