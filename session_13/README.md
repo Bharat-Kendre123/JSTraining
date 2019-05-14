@@ -1,9 +1,9 @@
 ### Number Type
 
-1. There are 6 primitive types: string, number, boolean, symbol, null and undefined.
+1. There are 6 primitive types: **string, number, boolean, symbol, null** and **undefined.**
 2. All numbers in JavaScript are stored in **64-bit format IEEE-754,** also known as **“double precision floating point numbers”.**
-3. The method num.toString(base) returns a string representation of num in the numeral system with the given base. The base can vary from 2 to 36. By default it’s 10.
-4. Please note that two dots in 123456..toString(36) is not a typo. If we want to call a method directly on a number, like toString in the example above, then we need to place two dots .. after it.If we placed a single dot: 123456.toString(36), then there would be an error, because JavaScript syntax implies the decimal part after the first dot. And if we place one more dot, then JavaScript knows that the decimal part is empty and now goes the method. Also could write (123456).toString(36).
+3. The method **num.toString(base)** returns a **string** representation of num in the numeral system with the given base.The base can vary from **2 to 36. By default it’s 10.**
+4. Please note that two dots in **123456..toString(36)** is not a typo. **If we want to call a method directly on a number, like toString in the example above, then we need to place two dots .. after it**.If we placed a single dot: 123456.toString(36), then there would be an error, because JavaScript syntax implies the decimal part after the first dot. And if we place one more dot, then JavaScript knows that the decimal part is empty and now goes the method. Also could write **(123456).toString(36).**
 5. There are several built-in functions for rounding:
     * **Math.floor**
 Rounds down: 3.1 becomes 3, and -1.1 becomes -2.
@@ -13,31 +13,31 @@ Rounds up: 3.1 becomes 4, and -1.1 becomes -1.
 Rounds to the nearest integer: 3.1 becomes 3, 3.6 becomes 4 and -1.1 becomes -1.
     * **Math.trunc**
 Removes anything after the decimal point without rounding: 3.1 becomes 3, -1.1 becomes -1.
-5. Another funny consequence of the internal representation of numbers is the existence of two zeroes: 0 and -0.That’s because a sign is represented by a single bit, so every number can be positive or negative, including a zero.
-6. But do we need this function? Can’t we just use the comparison === NaN? Sorry, but the answer is no. The value NaN is unique in that it does not equal anything, including itself.
-7. isNaN(value) converts its argument to a number and then tests it for being NaN.
-8. isFinite(value) converts its argument to a number and returns true if it’s a regular number, not NaN/Infinity/-Infinity. Sometimes isFinite is used to validate whether a string value is a regular number.
-9. There is a special built-in method Object.is that compares values like ===, but is more reliable for two edge cases: 
-    * It works with NaN: Object.is(NaN, NaN) === true, that’s a good thing.
-    * Values 0 and -0 are different: Object.is(0, -0) === false, technically that’s true, because internally the number has a sign bit that may be different even if all other bits are zeroes.
-    * In all other cases, Object.is(a, b) is the same as a === b.
-    * This way of comparison is often used in JavaScript specification. When an internal algorithm needs to compare two values for being exactly the same, it uses Object.is (internally called SameValue).
+5. Another funny consequence of the internal representation of numbers is the **existence of two zeroes: 0 and -0.** That’s because a sign is represented by a single bit, so every number can be positive or negative, including a zero.
+6. But do we need **isNaN()** function? Can’t we just use the **comparison === NaN?** Sorry, but the answer is no. The **value NaN is unique in that it does not equal anything, including itself.**
+7. **isNaN(value)** converts its argument to a number and then tests it for being NaN.
+8. **isFinite(value)** converts its argument to a number and returns true if it’s a regular number, **not NaN/Infinity/-Infinity.** Sometimes isFinite is used to validate whether a **string value is a regular number**.
+9. There is a special built-in method **Object.is** that compares values **like ===**, but is more reliable for two edge cases: 
+    * It works with NaN: **Object.is(NaN, NaN) === true,** that’s a good thing.
+    * Values 0 and -0 are different: **Object.is(0, -0) === false,** technically that’s true, because internally the number has a sign bit that may be different even if all other bits are zeroes.
+    * **In all other cases, Object.is(a, b) is the same as a === b.**
+    * **This way of comparison is often used in JavaScript specification. When an internal algorithm needs to compare two values for being exactly the same, it uses Object.is (internally called SameValue).**
 
 ### parseInt and parseFloat
 
-1. Numeric conversion using a plus + or Number() is strict. If a value is not exactly a number, it fails.
+1. **Numeric conversion using a plus + or Number() is strict. If a value is not exactly a number, it fails.**
 2. They “read” a number from a string until they can’t. In case of an error, the gathered number is returned. The function parseInt returns an integer, whilst parseFloat will return a floating-point number.
 3. The second argument of parseInt(str, radix)
-The parseInt() function has an optional second parameter. It specifies the base of the numeral system, so parseInt can also parse strings of hex numbers, binary numbers and so on:
+The parseInt() function has an optional second parameter. It specifies the base of the numeral system, so parseInt can also **parse strings of hex numbers, binary numbers and so on.**
 
 ### Math functions
 
 1. JavaScript has a built-in Math object which contains a small library of mathematical functions and constants.
-2. Math.random()
+2. **Math.random()**
     * Returns a random number from 0 to 1 (not including 1)
-3. Math.max(a, b, c...) / Math.min(a, b, c...)
+3. **Math.max(a, b, c...) / Math.min(a, b, c...)**
     * Returns the greatest/smallest from the arbitrary number of arguments.
-4. Math.pow(n, power)
+4. **Math.pow(n, power)**
     * Returns n raised the given power
 
 ### Summary
