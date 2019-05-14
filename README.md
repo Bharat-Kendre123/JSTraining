@@ -19,3 +19,9 @@
 9. Symbol Type
 
 10. Object methods, this
+
+11.
+
+12. Constructor and new Operator
+
+13. Number Type
