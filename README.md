@@ -20,8 +20,10 @@
 
 10. Object methods, this
 
-11.
+11. Object to primitive - whole topic left
 
 12. Constructor and new Operator
 
-13. Number Type
+13. Number Type  -- task remaining
+
+14. string
