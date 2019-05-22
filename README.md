@@ -17,3 +17,15 @@
 8. Objects
 
 9. Symbol Type
+
+10. Object methods, this
+
+11. Object to primitive - whole topic left
+
+12. Constructor and new Operator
+
+13. Number Type  -- task remaining
+
+14. string
+
+15. Array
