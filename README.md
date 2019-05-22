@@ -27,3 +27,5 @@
 13. Number Type  -- task remaining
 
 14. string
+
+15. Array
