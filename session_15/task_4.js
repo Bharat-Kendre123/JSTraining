@@ -1,3 +1,4 @@
+/// Task 4
 // The input is an array of numbers, e.g. arr = [1, -2, 3, 4, -9, 6].
 
 // The task is: find the contiguous subarray of arr with the maximal sum of items.
