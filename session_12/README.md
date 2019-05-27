@@ -1,14 +1,14 @@
 ### Constructor functions
 
 1. Constructor functions technically are regular functions. There are two conventions though:
-    * They are named with capital letter first.
-    * They should be executed only with "new" operator.
+    * They are named with **capital letter first**.
+    * They should be executed only with **"new"** operator.
 2. When a function is executed as **new User(...),** it does the following steps:
-    * A new empty object is created and assigned to **this**.
+    * A **new empty object** is created and assigned to **this**.
     * The function body executes. **Usually it modifies this, adds new properties to it**.
     * **The value of this is returned.**
-3. Let’s note once again – technically, any function can be used as a constructor. That is: any function can be run with new, and it will execute the algorithm above. The “capital letter first” is a common agreement, to make it clear that a function is to be run with new.
-4. Inside a function, we can check whether it was called with new or without it, using a special new.target property.It is empty for regular calls and equals the function if called with new.
+3. Let’s note once again – technically, **any function can be used as a constructor**. That is: any function can be run with new, and it will execute the algorithm above. The “capital letter first” is a common agreement, to make it clear that a function is to be run with new.
+4. Inside a function, we can check whether it was **called with new or without it**, using a special **new.target property**.It is **empty** for regular calls and **equals** the function if called with new.
 5. By the way, we can omit parentheses after new, if it has no arguments.
 
 ### Summary

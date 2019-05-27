@@ -136,4 +136,7 @@ console.log("user- "+user); // user- [object Object]
 console.log("temp- "+temp);//user- [object Object]
 console.log(user); //{ '0': 0, '1': 1, '2': '2', '3': 3, '-1': -1 }
 console.log(temp);//{ '0': 0, '1': 1, '2': '2', '3': 3, '-1': -1 }
+
+let yx;
+console.log(Object.assign(yx,temp)); //TypeError: Cannot convert undefined or null to object
 ~~~

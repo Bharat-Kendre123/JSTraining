@@ -3,21 +3,22 @@
 1. By specification, object property keys may be either of **string** type, or of **symbol** type. Not numbers, not booleans, only strings or symbols, these two types.
 2. **“Symbol”** value represents a unique identifier.
 3. Symbols are guaranteed to be unique. Even if we create many symbols with the same description, they are different values. The description is just a label that doesn’t affect anything.
+4. **if we do not have symbol reference, them we van not access that symbol.**
 
 ### “Hidden” properties
 
-1. Symbols allow us to create “hidden” properties of an object, that no other part of code can occasionally access or overwrite.
+1. Symbols allow us to create **“hidden” properties** of an object, that no **other part of code can occasionally access or overwrite.**
 2. Imagine that another script wants to have its own “id” property inside user, for its own purposes. That may be another JavaScript library, so the scripts are completely unaware of each other.Then that script can create its own Symbol("id").
-3. Symbolic properties do not participate in for..in loop. That’s a part of the general “hiding” concept. If another script or a library loops over our object, it won’t unexpectedly access a symbolic property.
-4. In contrast, Object.assign copies both string and symbol properties. There’s no paradox here. That’s by design. The idea is that when we clone an object or merge objects, we usually want all properties to be copied (including symbols like id).
-5. Property keys of other types are coerced to strings
+3. Symbolic properties **do not participate in for..in loop. That’s** a part of the general “hiding” concept. If another script or a library loops over our object, it won’t unexpectedly access a symbolic property.
+4. In contrast, **Object.assign** copies both string and symbol properties. There’s no paradox here. That’s by design. The idea is that when we clone an object or merge objects, we usually want all properties to be copied (including symbols like id).
+5. **Property keys of other types are coerced to strings.**
 
 ### Global Symbols
 
-1. In order to create or read a global symbol in the global registry, use Symbol.for(key).
-2. That call checks the global registry, and if there’s a symbol described as key, then returns it, otherwise creates a new symbol Symbol(key) and stores it in the registry by the given key.
+1. **In order to create or read a global symbol in the global registry, use Symbol.for(key).**
+2. That call **checks the global registry, and if there’s a symbol described as key, then returns it, otherwise creates a new symbol Symbol(key) and stores it in the registry by the given key.**
 3. Symbols inside the registry are called global symbols. If we want an application-wide symbol, accessible everywhere in the code – that’s what they are for.
-4. For global symbols, not only Symbol.for(key) returns a symbol by name, but there’s a reverse call: Symbol.keyFor(sym), that does the reverse: returns a name by a global symbol. The Symbol.keyFor internally uses the global symbol registry to look up the key for the symbol. So it doesn’t work for non-global symbols. If the symbol is not global, it won’t be able to find it and return undefined.
+4. For global symbols, not only Symbol.for(key) returns a symbol by name, but there’s a reverse call: **Symbol.keyFor(sym)**, that does the reverse: returns a name by a global symbol. The Symbol.keyFor internally uses the global symbol registry to look up the key for the symbol. So it doesn’t work for non-global symbols. If the symbol is not global, it won’t be able to find it and return undefined.
 
 ### System Symbols
 

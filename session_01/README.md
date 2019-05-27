@@ -1,7 +1,7 @@
 # JSTraining
 
 ## Data Type Basics
-1. Different engines have different “codenames”. For example:
+1. Different engines(those executes javaScript code) have different “codenames”. For example:
 * **V8** – in Chrome and Opera.
 * **SpiderMonkey** – in Firefox.
 * There are other codenames like **“Trident”** and **“Chakra”** for different versions of IE, **“ChakraCore”** for Microsoft Edge, **“Nitro”** and **“SquirrelFish”** for Safari, etc.
@@ -25,20 +25,20 @@
 10. The result of **typeof null is "object".** That’s wrong. **It is an officially recognized error in typeof, kept for compatibility.** Of course, null is not an object. It is a special value with a separate type of its own. So, again, this is an error in the language.
 
 11. There are 7 basic data types in JavaScript.
-* Number for numbers of any kind: integer or floating-point.
-* string for strings. A string may have one or more characters, there’s no separate single-character type.
-* boolean for true/false.
+* **Numbe**r for numbers of any kind: **integer or floating-point.**
+* **string** for strings. A string may have one or more characters, there’s no separate single-character type.
+* **boolean for true/false.**
 * **null** for unknown values – a standalone type that has a single value null.
 E. **undefined** for unassigned values – a **standalone type** that has a single value undefined.
-F. object for more complex data structures.
+F. **object for more complex data structures.**
 G. **symbol for unique identifiers.**
 
-12. The typeof operator allows us to see which type is stored in a variable.	
+12. The typeof operator allows us to see which type of data is stored in a variable.	
 Two forms: **typeof x or typeof(x).**
 Returns a **string** with the name of the type, like "string".
 **For null returns "object" – this is an error in the language, it’s not actually an object.**
 
-13. typeof operator always return string.
+13. **return type** of **typeof** is **string.**
 
 ### Code Part
 ~~~
@@ -48,7 +48,7 @@ console.log(-1/0)  // -Infinity
 var x;
 console.log("x value is -" ,x); // undefined
 
-// mathmatical operation with undeined type data
+// mathmatical operation with undefined type of data
 console.log(x+3)  //NaN
 
 // mathmatical operation with number in string
