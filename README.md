@@ -29,3 +29,7 @@
 14. string
 
 15. Array
+
+16. Array Methods
+
+17. Iterables
