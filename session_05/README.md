@@ -1,14 +1,13 @@
 ### Logical Operators
 
 #### Logical OR operator
-1. forget the original use of OR operator. That we used till now.
+1. forget the original use of OR operator. That we use daily basis now.
 2. The extended algorithm works as follows.Given multiple OR’ed values:
-
-* result = value1 || value2 || value3;
-The OR || operator does the following:
-* Evaluates operands from left to right.
-* For each operand, converts it to boolean. If the result is true, stops and returns the original value of that operand.
-* If all operands have been evaluated (i.e. all were false), returns the last operand.
+    * **result = value1 || value2 || value3;**
+    * The OR || operator does the following:
+        * Evaluates operands from left to right.
+        * For each operand, converts it to boolean. If the result is true, stops and returns the original value of that operand.
+        * If all operands have been evaluated (i.e. all were false), returns the last operand.
 
 #### Logical AND operator
 

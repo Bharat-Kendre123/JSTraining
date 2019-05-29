@@ -112,3 +112,74 @@ console.log("string"==typeof String(array3)); // true
 console.log([] + "1");
 console.log([1,2]+3);//1,23
 ~~~
+### Task
+
+~~~
+// task 1
+let fruits = ["Apples", "Pear", "Orange"];
+
+// push a new value into the "copy"
+let shoppingCart = fruits;
+shoppingCart.push("Banana");
+
+// what's in fruits?
+console.log(fruits.length);//4
+
+// task 2
+
+let array=["Jazz", "Blues"];
+array.push("Rock-n-Roll");
+console.log(replaceMiddleValue(array)); //[ 'Jazz', 'classic', 'Rock-n-Roll' ]
+console.log(array.shift()); //Jazz
+console.log(array.unshift("Rap", "Reggae",));//4
+console.log(array); // [ 'Rap', 'Reggae', 'classic', 'Rock-n-Roll' ]
+
+function replaceMiddleValue( array)
+{
+    if(array.lenght%2!=0)
+    {
+        
+        array[Math.floor((array.length-1)/2)]="classic"
+        return array;
+    }else{
+        return array;
+    }
+}
+
+// Task 3
+
+let arr = ["a", "b"];
+
+arr.push(function() {
+  console.log( this );
+})
+
+console.log(arr);
+ arr[2](); // [ 'a', 'b', [Function] ]
+
+
+/// Task 4
+// The input is an array of numbers, e.g. arr = [1, -2, 3, 4, -9, 6].
+// The task is: find the contiguous subarray of arr with the maximal sum of items.
+// Write the function getMaxSubSum(arr) that will return that sum.
+
+
+//let arr = [1, -2, 3, 4, -9, 6,4,5,6,-1,-2,3,];
+let arr=[-1,-2];
+console.log(getMaxSubSum());
+
+function getMaxSubSum(){
+    let maxValue=0;
+    let tempMax=0;
+    for(let value of arr){
+        
+        if(value>0){
+            tempMax=tempMax+value;
+        }else{
+            maxValue=tempMax>maxValue?tempMax:maxValue;
+            tempMax=0;
+        }
+    }
+    return maxValue;
+}
+~~~

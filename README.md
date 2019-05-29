@@ -20,12 +20,16 @@
 
 10. Object methods, this
 
-11. Object to primitive - whole topic left
+11. Object to primitive
 
 12. Constructor and new Operator
 
-13. Number Type  -- task remaining
+13. Number Type
 
 14. string
 
 15. Array
+
+16. Array Methods
+
+17. Iterables

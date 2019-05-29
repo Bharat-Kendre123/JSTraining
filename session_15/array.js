@@ -37,11 +37,11 @@ console.log(array2);
 console.log("array lenght -"+array2.length);//array lenght -10  -- it does not count non array element
 
 // normal obj
-let temp={name:"bharat",
+let tempMax={name:"bharat",
     age:10,
 };
 
- console.log(temp); //{ name: 'bharat', age: 10 }
+ console.log(tempMax); //{ name: 'bharat', age: 10 }
 
  array2[10]="I am 10";
  console.log(array2);
