@@ -33,3 +33,5 @@
 16. Array Methods
 
 17. Iterables
+
+18. Map, Set, WeakMap and WeakSet
