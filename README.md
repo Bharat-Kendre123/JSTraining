@@ -43,3 +43,5 @@
 21. Rest parameters and spread operator
 
 22. Closure
+
+23. Old Var
