@@ -35,3 +35,9 @@
 17. Iterables
 
 18. Map, Set, WeakMap and WeakSet
+
+19. Object.keys, values, entries
+
+20. Date Object
+
+21. Rest parameters and spread operator
