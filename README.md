@@ -41,3 +41,5 @@
 20. Date Object
 
 21. Rest parameters and spread operator
+
+22. Closure
