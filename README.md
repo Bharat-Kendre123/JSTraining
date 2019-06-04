@@ -45,3 +45,7 @@
 22. Closure
 
 23. Old Var
+
+24. Function as Object
+
+25. The "new Function" syntax
