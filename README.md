@@ -54,3 +54,5 @@
 
 27. Decorators and forwarding, call/apply
 
+28. Function binding
+
