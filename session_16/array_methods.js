@@ -126,7 +126,7 @@ let namesArray=names.split(', ');
 console.log(namesArray); // [ 'Bilbo', 'Gandalf', 'Nazgul' ]
 
 console.log(namesArray.join(',')); // Bilbo,Gandalf,Nazgul  -- it joins the array element with provided separator
-console.log([1,2,3,4].join(',')); 1,2,3,4
+console.log([1,2,3,4].join(',')); 1,2,3,4   
 
 /// if we want to limit the output 
 console.log(names.split(', ',2)); // [ 'Bilbo', 'Gandalf' ]
