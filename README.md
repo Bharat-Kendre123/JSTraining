@@ -49,3 +49,8 @@
 24. Function as Object
 
 25. The "new Function" syntax
+
+26. Scheduling
+
+27. Decorators and forwarding, call/apply
+
