@@ -62,3 +62,5 @@
 
 31. F.prototype
 
+32. Native Prototype(2nd task is left)
+
