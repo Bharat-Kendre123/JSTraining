@@ -56,3 +56,9 @@
 
 28. Function binding
 
+29. 
+
+30. Prototypal Inheritance
+
+31. F.prototype
+

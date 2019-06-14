@@ -40,4 +40,4 @@ let wrapper = function() {
   return anotherFunction.apply(this, arguments);
 };
 
-// That’s called call forwarding    
+// That’s called call forwarding
