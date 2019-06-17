@@ -64,3 +64,5 @@
 
 32. Native Prototype(2nd task is left)
 
+33. Class basics
+
