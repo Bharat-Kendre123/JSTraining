@@ -56,3 +56,15 @@
 
 28. Function binding
 
+29. 
+
+30. Prototypal Inheritance
+
+31. F.prototype
+
+32. Native Prototype(2nd task is left)
+
+33. Class basics
+
+34. Function expression and Arrow function
+
