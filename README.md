@@ -66,3 +66,5 @@
 
 33. Class basics
 
+34. Function expression and Arrow function
+
